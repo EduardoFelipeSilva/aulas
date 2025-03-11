@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="cargo.php" method="GET">
-        <label for="cargo">Selecione o Codigo do cargo para saber qual é o codigo</label><br><br>
+        <label for="cargo">Selecione o Codigo do cargo para saber qual é o cargo correspondente</label><br><br>
         <div class="">
             <select name="cargo" id="cargo">
                 <option value="1">1</option>

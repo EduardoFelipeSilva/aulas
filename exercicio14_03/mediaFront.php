@@ -8,7 +8,7 @@
 <body>
     <form action="media.php" method="POST">
         <label for="media"> Digite a Media do aluno</label>
-        <input type="number" name="media" id="media" >
+        <input type="number" step="0.1" name="media" id="media" >
         <input type="submit" name="enviar">
 
 

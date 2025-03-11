@@ -11,16 +11,18 @@
         $resultado = $num1 + $num2;
         echo "A soma do valor : ". $num1. " +  ". $num2. " é = ". $resultado;
     }
-    elseif($operacao == 2 )
-    {
-        $resultado = $num1  - $num2;
-        echo "A subtração do valor : ". $num1. " - ". $num2. " é = ". $resultado;
-    }
-    elseif($operacao == 3)
+
+    elseif($operacao == 2)
     {
         $resultado = $num1 * $num2;
         echo "A muliplicação do valor : ". $num1. " * ". $num2. " é = ". $resultado;
     }
+    elseif($operacao == 3 )
+    {
+        $resultado = $num1  - $num2;
+        echo "A subtração do valor : ". $num1. " - ". $num2. " é = ". $resultado;
+    }
+
     elseif($operacao == 4 and $num2 != 0)
     {
         $resultado = $num1 / $num2;
@@ -28,5 +30,5 @@
     }
     else
     {
-        echo "Não dividi por 0";
+        echo "Não há divisão por zero";
     }
