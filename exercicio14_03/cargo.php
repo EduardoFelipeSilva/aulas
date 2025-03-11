@@ -2,23 +2,22 @@
     $cargo = $_GET["cargo"];
 
 
-    if($cargo == 1)
-    {
-        echo "O cargo selecionado foi Escrituário";
-    }
-    elseif($cargo == 2)
-    {
-        echo "O cargo selecionado foi Secretária";
-    }
-    elseif($cargo == 3)
-    {
-        echo "O cargo selecionado foi Caixa";
-    }
-    elseif($cargo == 4)
-    {
-        echo "O cargo selecionado foi Gerente";
-    }
-    elseif($cargo == 5)
-    {
-        echo "O cargo selecionado foi Diretor";
+    switch ($cargo) {
+        case 1:
+            echo "O cargo selecionado foi: Escrituário";
+            break;
+        case 2:
+            echo "O cargo selecionado foi: Secretária";
+            break;
+        case 3:
+            echo "O cargo selecionado foi: Caixa";
+            break;
+        case 4:
+            echo "O cargo selecionado foi: Gerente";
+            break;
+        case 5:
+            echo "O cargo selecionado foi: Diretor";
+            break;
+        default:
+            echo "O codigo nao cadastrado";
     }
