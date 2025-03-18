@@ -4,7 +4,7 @@ m = (n1 + n2)/2
 print("A média é: ",m)
 if(m > 5):
     print("Aluno aprovado")
-elif(m>=3 or m <= 5 ):
+elif(m>=3):
     print("Aluno de exame")
 else:
     print("Aluno reprovado")
