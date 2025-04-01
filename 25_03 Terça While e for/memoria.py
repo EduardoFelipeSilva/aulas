@@ -1,4 +1,4 @@
-jogo = "S"
+jogo = "V"
 while jogo.upper() == "S":
     tentativa = 0
     print ( "Bem vindo ao jogo da Memoria","\n", "jogador 1 qual numero voce gostaria de escolher para ser adivinhado Escolha um numero entre 1 a 10?  ")
