@@ -1,0 +1,29 @@
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%; /* Exibe o menu logo abaixo do botão */
+    z-index: 1000;
+    display: none; /* Oculta por padrão */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block; /* Exibe o menu quando o botão for hover */
+}
+
+.navbar .nav-item {
+    position: relative; /* Garante o posicionamento correto dos menus */
+}
+
+.navbar .dropdown-menu a {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Destaque nos links */
+}
