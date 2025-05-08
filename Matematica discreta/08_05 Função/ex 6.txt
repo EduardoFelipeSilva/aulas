@@ -1,0 +1,53 @@
+##############################################################
+##Exemplo 5
+##############################################################
+from matplotlib import pyplot as plt
+
+def g(d):
+    return d * 2.50 +6
+
+def d(g):
+    return (g-6)/2.50
+
+def resultado():
+    X = range(1,50)
+    Y = [g(k) for k in X]
+    plt.plot(X,Y,color = 'green')
+    plt.xlabel('Distancia percorrida')
+    plt.ylabel('(R$)')
+    plt.grid(True)
+    plt.show()
+
+
+
+resultado()
+
+##############################################################
+##Exemplo 6   
+##############################################################
+# from matplotlib import pyplot as plt
+
+# def h(a,b,c,t):
+#     return a*t**2 + b*t + c
+
+# def x_vértice(a,b):
+#     return -b/(2*a)
+
+# def y_vértice(a,b,c):
+#     return -(b**2-4*a*c)/(4*a)
+
+# def resultado(): 
+#     X = [0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0]
+#     Y = [h(a,b,c,k) for k in X]
+#     plt.plot(X,Y,color = 'cyan')
+#     plt.xlabel('tempo (s)')
+#     plt.ylabel('altura (m)')
+#     plt.grid(True)
+#     plt.show()
+
+# a = -5
+# b = 10
+# c = 2
+# print('A altura máxima que a bola atinge é %.2f metros' % y_vértice(a,b,c))
+# print('A bola atinge a altura máxima em %.1f segundos' % x_vértice(a,b))
+# resultado()
