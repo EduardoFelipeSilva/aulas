@@ -1,0 +1,44 @@
+from matplotlib import pyplot as plt
+import math
+
+def h(a,b,c,t):
+    return a*t**2 + b*t + c
+
+def x_vértice(a,b):
+    return -b/(2*a)
+
+def y_vértice(a,b,c):
+    return -(b**2-4*a*c)/(4*a)
+
+def resultado(): 
+    X = [0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0]
+    Y = [h(a,b,c,k) for k in X]
+    plt.plot(X,Y,color = 'cyan')
+    plt.xlabel('tempo (s)')
+    plt.ylabel('altura (m)')
+    plt.grid(True)
+    plt.show()
+
+def delta(a,b,c):
+  delta = (b**2) -4*a*c
+  if delta < 0:
+      print('A equação nao tem x reais')
+  else:
+      print('A equação tem x reais', delta)
+
+  raiz = math.sqrt(delta)
+  t1 = (-b + raiz) / -10 
+  t2 = (-b - raiz) / -10 
+  if t1 > t2:
+    return print(f'{t1:.2f}')
+  else:
+    return print(f'{t2:.2f}') 
+
+a = -5
+b = 10
+c = 2
+
+print('A altura máxima que a bola atinge é %.2f metros' % y_vértice(a,b,c))
+print('A bola atinge a altura máxima em %.1f segundos' % x_vértice(a,b))
+resultado()
+delta(a,b,c)
